@@ -147,6 +147,26 @@ nav {
   transform: scale(1.1);
 }
 
+.technologies {
+  background: url('./Assets/technology/background-technology-desktop.jpg');
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rkIMG {
+  width: 515px;
+  height: 527px;
+  background: url('./Assets/technology/image-launch-vehicle-portrait.jpg');
+  margin: 1em;
+}
+
+.h-tech {
+  font-size: 3rem;
+  margin: 0.878rem 0;
+}
+
 .rocket-details {
   display: flex;
   flex-direction: column;
