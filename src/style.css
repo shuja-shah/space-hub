@@ -354,8 +354,6 @@ tr:nth-child(even) {
   display: none;
 }
 
-/* Make it responsive for tablets */
-
 @media screen and (max-width: 768px) {
   .Home {
     background: url('./Assets/home/background-home-tablet.jpg');
@@ -435,10 +433,6 @@ tr:nth-child(even) {
     text-align: left;
     line-height: 1.2rem;
     width: 300px;
-  }
-
-  .logo {
-    display: none;
   }
 
   .Profile {
@@ -540,9 +534,40 @@ tr:nth-child(even) {
   table td:last-child {
     border-bottom: 0;
   }
-}
 
-/* Make it responsive for mobile */
+  .nav-links {
+    width: 60%;
+    background-color: #151923;
+  }
+
+  .nav-links a li {
+    padding: 1rem 0;
+    color: #d0d6f9;
+  }
+
+  .nav-links a li:hover {
+    border-bottom: 3px solid #fff;
+  }
+
+  nav {
+    background-color: #0b0d17;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    display: block;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .logoText {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 480px) {
   .Home {
@@ -564,6 +589,10 @@ tr:nth-child(even) {
 
   .introDet {
     margin: 1rem 3em 2em 1rem;
+  }
+
+  .det {
+    font-size: 0.95rem;
   }
 
   .Paragraph {

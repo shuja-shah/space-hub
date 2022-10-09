@@ -15,7 +15,7 @@ const Nav = () => (
         <li>Missions</li>
       </Link>
       <Link to="/profile">
-        <li>My Profile</li>
+        <li>Profile</li>
       </Link>
     </ul>
     <Link to="/mbNav" className="hideDesktop">
