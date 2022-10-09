@@ -24,7 +24,7 @@ const RocketList = () => {
               experience!
             </p>
           </div>
-          <a href="#rockets" className="btn btn-special">Explore</a>
+          <a href="#rockets" className=" btn-special">Explore</a>
         </article>
 
       </section>

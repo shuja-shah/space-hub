@@ -124,6 +124,29 @@ nav {
   margin: 0.5rem 0.8rem;
 }
 
+.btn-special {
+  height: 174px;
+  width: 174px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin: 1rem 4rem;
+  font-family: 'Bellefair', serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #0b0d17;
+}
+
+.btn-special:hover {
+  transform: scale(1.1);
+}
+
 .rocket-details {
   display: flex;
   flex-direction: column;
