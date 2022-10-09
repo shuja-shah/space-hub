@@ -350,9 +350,70 @@ tr:nth-child(even) {
   font-size: 0.8rem;
 }
 
+/* Make it responsive for tablets */
+
 @media screen and (max-width: 768px) {
+  .Home {
+    background: url('./Assets/home/background-home-tablet.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .intro {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .introDet {
+    margin: 1rem 3em 2em 1rem;
+  }
+
+  .Paragraph {
+    font-size: 1em;
+    text-align: left;
+    width: 300px;
+    line-height: 1.5rem;
+  }
+
+  .heading {
+    font-size: 3rem;
+    margin: 0.9rem 0;
+  }
+
+  .technologies {
+    background: url('./Assets/technology/background-technology-tablet.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+  }
+
+  .btn-special {
+    height: 150px;
+    width: 150px;
+    margin: 1.5rem 0.5rem;
+  }
+
+  .rkIMG {
+    display: none;
+  }
+
+  .techIntro {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .rocket-container {
     flex-direction: column;
+  }
+
+  .Rocket-List {
+    background: url('./Assets/destination/background-destination-tablet.jpg');
   }
 
   .rocketImage > img {
@@ -366,12 +427,10 @@ tr:nth-child(even) {
   }
 
   .rocket-container p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: left;
-  }
-
-  .Rocket-List {
-    margin: 4rem 0;
+    line-height: 1.2rem;
+    width: 300px;
   }
 
   .logo {

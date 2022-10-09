@@ -28,7 +28,7 @@ const RocketList = () => {
         </article>
       </section>
       <section className="technologies">
-        <article className="intro">
+        <article className="intro techIntro">
           <article className="techDet introDet">
             <p className="det">
               The terminology...
