@@ -26,7 +26,24 @@ const RocketList = () => {
           </div>
           <a href="#rockets" className=" btn-special">Explore</a>
         </article>
-
+      </section>
+      <section className="technologies">
+        <article className="techDet introDet">
+          <p className="det">
+            The terminology...
+          </p>
+          <h2 className="heading h-tech">LAUNCH VEHICLE</h2>
+          <p className="Paragraph">
+            A launch vehicle or carrier rocket is a
+            rocket-propelled vehicle used to carry a
+            payload from Earth surface to space,
+            usually to Earth orbit or beyond.
+            Our WEB-X carrier rocket is the
+            most powerful in operation. Standing
+            150 metres tall, its quite an awe-inspiring
+            sight on the launch pad!
+          </p>
+        </article>
       </section>
       <section className="Rocket-List" id="rockets">
         {rockets.map((item) => (
