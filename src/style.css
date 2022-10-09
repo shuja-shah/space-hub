@@ -116,14 +116,6 @@ nav {
   margin: 2.5rem 0;
 }
 
-.rocket-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.45rem 0.75rem;
-  margin: 0.5rem 0.8rem;
-}
-
 .btn-special {
   height: 174px;
   width: 174px;
@@ -167,10 +159,19 @@ nav {
   margin: 0.878rem 0;
 }
 
+.rocket-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 0.75rem;
+  margin: 0.5rem 0.8rem;
+  flex-direction: column;
+}
+
 .rocket-details {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   padding: 0.45rem 0.75rem;
 }
@@ -178,21 +179,24 @@ nav {
 .rocket-details p {
   font-size: 1.5rem;
   font-weight: 500;
-  font-family: 'Lato', sans-serif;
-  color: #333;
+  font-family: 'Barlow', sans-serif;
+  color: #d0d6f9;
+  width: 50%;
+  letter-spacing: 0.127rem;
 }
 
 .rocket-details h2,
 .Title {
   margin: 0.1rem 0.4rem;
   font-size: 2.5rem;
-  font-weight: 700;
-  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-family: 'Bellefair', serif;
+  color: #fff;
 }
 
 .rocketImage > img {
   width: auto;
-  height: 250px;
+  height: 300px;
   justify-self: flex-start;
 }
 
@@ -201,25 +205,28 @@ nav {
   row-gap: 5rem;
   padding: 0.576rem 0.75rem;
   justify-items: center;
+  background: url('./Assets/destination/background-destination-desktop.jpg');
 }
 
 .btn {
   display: inline-block;
-  padding: 0.5rem 1.5rem;
-  border: 1px solid var(--clr-btn);
+  padding: 1rem 2rem;
   border-radius: 0.25rem;
-  color: var(--clr-btn);
+  color: #0b0d17;
   font-size: 1rem;
   font-weight: 500;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  transition: all 0.3s linear;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  background-color: #fff;
 }
 
 .btn:hover {
-  background: #333;
+  background: #0b0d17;
   color: #fff;
+  transform: scale(1.1);
 }
 
 .btn-primary {
@@ -229,10 +236,10 @@ nav {
 }
 
 .btn-disabled {
-  border: 1px solid #333;
-  color: #333;
+  color: #fff;
   border-radius: 5px;
   cursor: pointer;
+  background-color: #0b0d17;
 }
 
 .badge {

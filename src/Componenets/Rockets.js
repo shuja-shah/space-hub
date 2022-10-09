@@ -32,7 +32,7 @@ const Rockets = ({ rocketImage, rocketName, rocketDescription }) => {
         <h2>{rocketName}</h2>
         { reservations.includes(rocketName) && <div className="badge">Reserved</div> }
         <p>{rocketDescription}</p>
-        {(reservations.includes(rocketName)) ? <button type="button" className="btn-disabled btn" onClick={handleCancel}>Cancel Reservations</button> : <button type="submit" className="btn btn-primary" onClick={handleReservations}>Reserve</button>}
+        {(reservations.includes(rocketName)) ? <button type="button" className="btn-disabled btn" onClick={handleCancel}>Cancel Reservations</button> : <button type="submit" className="btn" onClick={handleReservations}>Reserve</button>}
       </div>
     </article>
   );
