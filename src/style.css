@@ -350,6 +350,10 @@ tr:nth-child(even) {
   font-size: 0.8rem;
 }
 
+.hideDesktop {
+  display: none;
+}
+
 /* Make it responsive for tablets */
 
 @media screen and (max-width: 768px) {
@@ -622,10 +626,6 @@ tr:nth-child(even) {
     width: 240px;
   }
 
-  .logo {
-    display: none;
-  }
-
   .Profile {
     display: flex;
     flex-direction: column;
@@ -651,5 +651,40 @@ tr:nth-child(even) {
 
   .nav-links {
     display: none;
+  }
+
+  nav {
+    display: flex;
+    background: #0b0d17;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    display: flex;
+  }
+
+  .logo img {
+    height: 30px;
+    width: auto;
+  }
+
+  .logoText {
+    display: none;
+  }
+
+  .hideDesktop {
+    display: block;
+    margin: 2rem 1rem;
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
   }
 }
