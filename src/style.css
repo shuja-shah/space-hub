@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&family=Crete+Round:ital@0;1&family=Inter:wght@100;400;500;600;700;800&family=Lato&family=Poppins:wght@100;300;400;500;600;700&family=Roboto+Mono:wght@100;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&family=Crete+Round:ital@0;1&family=Inter:wght@100;400;500;600;700;800&family=Lato&family=Poppins:wght@100;300;400;500;600;700&family=Roboto+Mono:wght@100;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap");
 
 :root {
   --clr-btn: #0290ff;
@@ -40,7 +40,7 @@ nav {
   font-size: 2rem;
   font-weight: 700;
   color: #333;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: calc(0.14259rem * 2);
 }
 
@@ -57,15 +57,29 @@ nav {
   color: var(--clr-primary);
   font-size: 1.1rem;
   font-weight: 500;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .Home {
-  background: url('./Assets/home/background-home-desktop.jpg');
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.Home::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./Assets/home/background-home-desktop.jpg");
+  background-size: cover;
+  z-index: -1;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .intro {
@@ -85,7 +99,7 @@ nav {
 
 .Paragraph {
   font-size: 1.5rem;
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
   color: #d0d6f9;
   margin: 1rem 0;
   font-weight: 400;
@@ -96,7 +110,7 @@ nav {
 }
 
 .det {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 34px;
@@ -107,7 +121,7 @@ nav {
 }
 
 .heading {
-  font-family: 'Bellefair', serif;
+  font-family: "Bellefair", serif;
   font-size: 6rem;
   font-weight: 400;
   letter-spacing: 0.127rem;
@@ -127,7 +141,7 @@ nav {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   margin: 1rem 4rem;
-  font-family: 'Bellefair', serif;
+  font-family: "Bellefair", serif;
   font-size: 1.5rem;
   font-weight: 400;
   letter-spacing: 2px;
@@ -140,7 +154,7 @@ nav {
 }
 
 .technologies {
-  background: url('./Assets/technology/background-technology-desktop.jpg');
+  background: url("./Assets/technology/background-technology-desktop.jpg");
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -150,7 +164,7 @@ nav {
 .rkIMG {
   width: 515px;
   height: 527px;
-  background: url('./Assets/technology/image-launch-vehicle-portrait.jpg');
+  background: url("./Assets/technology/image-launch-vehicle-portrait.jpg");
   margin: 1em;
 }
 
@@ -179,7 +193,7 @@ nav {
 .rocket-details p {
   font-size: 1.5rem;
   font-weight: 500;
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
   color: #d0d6f9;
   width: 50%;
   letter-spacing: 0.127rem;
@@ -190,7 +204,7 @@ nav {
   margin: 0.1rem 0.4rem;
   font-size: 2.5rem;
   font-weight: 500;
-  font-family: 'Bellefair', serif;
+  font-family: "Bellefair", serif;
   color: #fff;
 }
 
@@ -205,7 +219,7 @@ nav {
   row-gap: 5rem;
   padding: 0.576rem 0.75rem;
   justify-items: center;
-  background: url('./Assets/destination/background-destination-desktop.jpg');
+  background: url("./Assets/destination/background-destination-desktop.jpg");
 }
 
 .btn {
@@ -215,7 +229,7 @@ nav {
   color: #0b0d17;
   font-size: 1rem;
   font-weight: 500;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   transition: all 0.3s ease-in-out;
@@ -249,7 +263,7 @@ nav {
   color: #fff;
   font-size: 0.75rem;
   font-weight: 500;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   background: #18a2b8;
@@ -274,7 +288,7 @@ nav {
   margin: 0.1rem 0.4rem;
   font-size: 1.5rem;
   font-weight: 500;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #333;
 }
 
@@ -289,7 +303,7 @@ th,
 td {
   text-align: left;
   padding: 16px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 tr,
@@ -356,7 +370,7 @@ tr:nth-child(even) {
 
 @media screen and (max-width: 768px) {
   .Home {
-    background: url('./Assets/home/background-home-tablet.jpg');
+    background: url("./Assets/home/background-home-tablet.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -389,7 +403,7 @@ tr:nth-child(even) {
   }
 
   .technologies {
-    background: url('./Assets/technology/background-technology-tablet.jpg');
+    background: url("./Assets/technology/background-technology-tablet.jpg");
     background-size: cover;
     background-repeat: repeat;
   }
@@ -415,7 +429,7 @@ tr:nth-child(even) {
   }
 
   .Rocket-List {
-    background: url('./Assets/destination/background-destination-tablet.jpg');
+    background: url("./Assets/destination/background-destination-tablet.jpg");
   }
 
   .rocketImage > img {
@@ -571,7 +585,7 @@ tr:nth-child(even) {
 
 @media screen and (max-width: 480px) {
   .Home {
-    background: url('./Assets/home/background-home-mobile.jpg');
+    background: url("./Assets/home/background-home-mobile.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -608,7 +622,7 @@ tr:nth-child(even) {
   }
 
   .technologies {
-    background: url('./Assets/technology/background-technology-mobile.jpg');
+    background: url("./Assets/technology/background-technology-mobile.jpg");
     background-size: cover;
     background-repeat: repeat;
   }
@@ -634,7 +648,7 @@ tr:nth-child(even) {
   }
 
   .Rocket-List {
-    background: url('./Assets/destination/background-destination-mobile.jpg');
+    background: url("./Assets/destination/background-destination-mobile.jpg");
     padding: 0;
   }
 
